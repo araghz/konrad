@@ -1,0 +1,200 @@
+/**
+##### First Page Which you see #####
+*/
+
+section#first-page {
+    background-image: url("/assets/images/background.jpg");
+    background-position: 0%;
+    background-size: cover;
+    filter: saturate(1);
+    -webkit-filter: saturate(1);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    font-family: 'Coda', cursive;
+    font-weight: 400;
+}
+
+section#first-page .flex-container h1, h4, h2 {
+    font-weight: 400;
+    line-height: 100%;
+}
+
+section#first-page .flex-container h1 {
+    color: var(--accent-secondary);
+    -webkit-text-stroke: 3px var(--accent-secondary);
+    font-size: 7.5rem;
+}
+section#first-page .flex-container h2 {
+    color: var(--accent-primary);
+    -webkit-text-stroke: 3px var(--accent-primary);
+    font-size: 7.5rem;
+    position: relative;
+    left: -0.581rem;
+}
+
+section#first-page .flex-container h4 {
+    color: var(--text-color);
+    font-size: 4.5rem;
+    position: relative;
+    left: -0.41rem;
+}
+
+section#first-page .flex-container input[type="button"] {
+    background: none;
+    border: 3px solid var(--accent-primary);
+    padding: 7px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    color: var(--text-color);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+section#first-page .flex-container input[type="button"]:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    cursor: pointer;
+    background: var(--accent-secondary);
+    border: 3px solid var(--accent-secondary);
+}
+
+body.isMobile section#first-page h4{
+    font-size: 5vw;
+    left: 0;
+}
+body.isMobile section#first-page h2{
+    font-size: 7.5vw;
+    -webkit-text-stroke: 1px var(--accent-primary);
+    left: 0;
+}
+body.isMobile section#first-page h1{
+    -webkit-text-stroke: 1px var(--accent-secondary);
+    font-size: 8vw;
+    left: 0;
+}
+body.isMobile section#first-page .flex-container input[type="button"] {
+    font-size: 3.5vw;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+body.isMobile .flex-container {
+    padding: 25px;
+}
+
+/**
+##### AI page (Artificial Intelligence) #####
+*/
+
+section[aria-label="Artificial Intelligence"] {
+    background-image: url("/assets/svg/ai.svg");
+    background-position: 0%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+[aria-label="Artificial Intelligence"] h2 {
+    font-size: 5.5rem;
+    font-family: 'Coda', sans-serif;
+    font-weight: 400;
+}
+[aria-label="Artificial Intelligence"] h1 {
+    font-size: 5.5rem;
+    font-family: 'Coda', sans-serif;
+    font-weight: 400;
+    -webkit-text-stroke: 2px white;
+}
+[aria-label="Artificial Intelligence"] p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: right;
+    max-width: 650px;
+    position: relative;
+    min-width: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+body.isMobile [aria-label="Artificial Intelligence"] p {
+    font-size: 1rem;
+}
+
+body.isMobile [aria-label="Artificial Intelligence"] h1 {
+    font-size: 3.125rem;
+}
+
+body.isMobile [aria-label="Artificial Intelligence"] h2 {
+    font-size: 3.125rem;
+}
+
+body.page-loaded [aria-label="Artificial Intelligence"] [data-inviewport] {
+    opacity: 0;
+}
+
+body.page-loaded [aria-label="Artificial Intelligence"] p.isInViewport,
+body.page-loaded [aria-label="Artificial Intelligence"] h1.isInViewport,
+body.page-loaded [aria-label="Artificial Intelligence"] h2.isInViewport,
+body.page-loaded [aria-label="Artificial Intelligence"] input.isInViewport {
+    transform: translateX(100vh);
+    -webkit-transform: translateX(100vh);
+    -moz-transform: translateX(100vh);
+    -ms-transform: translateX(100vh);
+    -o-transform: translateX(100vh);
+    animation-name: fadeInSlideInRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+section#artificial-intelligence .flex-container input[type="button"] {
+    background: none;
+    border: 3px solid var(--accent-primary);
+    padding: 7px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    color: var(--text-color);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+section#artificial-intelligence .flex-container input[type="button"]:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    cursor: pointer;
+    background: var(--accent-secondary);
+    border: 3px solid var(--accent-secondary);
+}
+
+body.isMobile section#artificial-intelligence .flex-container input[type="button"] {
+    font-size: 3.5vw;
+    padding-left: 25px;
+    padding-right: 25px;
+}
